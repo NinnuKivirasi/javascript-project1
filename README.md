@@ -33,6 +33,9 @@ Project1 includes:
 •	app.js
 •	README.md
 
+Video
+
+https://laureauas-my.sharepoint.com/:v:/g/personal/nik00086_laurea_fi/IQAu0UvMY2lfRqZN4v1meuWqAQIDIJlDnMleRo_JFtVOwGk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=x0ewyz
 
 Self-Reflection
 
