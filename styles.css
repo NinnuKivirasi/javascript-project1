@@ -1,0 +1,170 @@
+:root{
+    --brand: #b50dbae9;
+    --danger: #fe1010;
+    --ok: #392e7d;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background: #f8fafc;
+  color: #222;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+label {
+  margin: 0.25rem 0;
+}
+
+label[for="time"],
+label[for="otherActivities"],
+label[for="otherFood"],
+label[for="otherPain"],
+label[for="painLevel"],
+label[for="sleep"] {
+    display: block;
+}
+
+input[type="text"],
+input[type="time"],
+input[type="date"]{
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.error {
+    color: var(--danger);
+    margin: 6px 0 0;
+    min-height: 1.2em;
+}
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.btn {
+    background: var(--brand);
+    font-size: larger;
+    color: #ffffff;
+    border: 1px solid #0d4a62;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.btn-secondary {
+    background: #ffffff;
+    color: #1f2a3a;
+    font-size: larger;
+    border: 1px solid #c3a108;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor:pointer;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+}
+
+button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+#error-summary {
+    background: #fff3f3;
+    border-left: 6px solid var(--danger);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 0 0 12px;
+}
+.loading {
+  background: #fffbea;
+  color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.hidden { 
+  display: none; 
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  input, button {
+    width: 100%;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+/* Spinner overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.loading-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.spinner {
+  border: 4px solid #e5e7eb;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
